@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="mobileui/style.css">
+        <meta name="format-detection" content="telephone=no">
+        <meta charset="utf-8">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Currículo</title>
+    </head>
+    <body>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="mobileui/mobileui.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        
+        <div class="header text-white">
+            <div class="right">
+                <button class="icon ion-android-more-vertical" onclick="openPopover('popover1')"></button>
+            </div>
+
+            <div class="popover" id="popover1">
+                <div class="list">
+                  <div class="item"><img class="avatar" src="/img/facebook.png"></div>
+                  <div class="item"><img class="avatar" src="/img/google plus.png"></div>
+                  <div class="item"><img class="avatar" src="/img/linkedin.png"></div>
+                </div>
+            </div>
+
+            <div class="cover padding align-center has-header" style="background-image:url(/img/backtop.jpg)">                
+                <h1 class="text-white">
+                    <img class="avatar circle border-grey-800 shadow" src="/img/avatar.jpg">
+                    <p>Juliano Maciel</p>
+                </h1>
+                <h2>
+                    <span class="text-small red radius padding">Full satck</span>
+                    <span class="text-small green radius padding">Developer</span>
+                    <span class="text-small blue radius padding">T.I.</span>
+                </h2>
+                
+                <div class="space"></div>
+            </div>
+                
+            <div class="tab-content active" id="tabSobre">
+                <h2 class="text-strong padding text-grey-700">Sobre</h2>
+                <div class="list padding grey-700">
+                    <div class="list padding grey-600">
+                        <h6 class="padding text-white">Data de Nascimento: 14/08/1993</h6> 
+                    </div>
+
+                    <div class="list padding grey-600">
+                        <h6 class="padding text-white">Endereço: Rua Monte Paschoal 102, Jussara-PR</h5>
+                    </div>
+                    
+                    <div class="list padding grey-600">          
+                        <h6 class="padding text-white">CEP: 87230-000</h6>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="tab-content" id="tabContato">
+                <h2 class="text-strong padding text-grey-700">Contato</h2>
+                <div class="list padding grey-700">
+                    <div class="list padding grey-600">
+                        <h6 class="padding text-white">E-mail: julianoleicam@gmail.com</h6>
+                    </div>
+
+                    <div class="list padding grey-600">
+                        <h6 class="padding text-white">Telefone: +55 (44) 99144 - 8066</h6>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content has-footer" id="tabExperiencia">
+                <h2 class="text-strong padding text-grey-700">Experiência</h2>
+                <div class="list padding grey-700">
+                    <div class="list padding grey-600">
+                        <h6 class="padding text-white">Cargo atual: Análista de Desenvolvimento de Software - TOTVS S.A.</h6>
+                    </div>
+                </div>
+
+                <h2 class="text-strong padding text-grey-700">Projetos</h2>
+                <div class="list padding grey-700">
+                    <div class="list padding grey-600">
+                        <h6 class="padding text-white">Pagamento de royalties para fornecedores, GRUPO PL / Virtual Age by TOTVS.</h6>
+                    </div>
+
+                    <div class="list padding grey-600">
+                            <h6 class="padding text-white">Módulo de adiantamento de viagem, Calypso Bay / TOTVS Cianorte.</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tabFormacao">
+                <h2 class="text-strong padding text-grey-700">Formação</h2>
+                <div class="list padding grey-700">
+                    <div class="list padding grey-600">
+                        <h6 class="padding text-white">Ensino Superior – Concluído: Tecnologia em Análise e Desenvolvimento de Sistemas – UNIPAR.</h6>
+                    </div>
+ 
+                    <div class="list padding grey-600">
+                        <h6 class="padding text-white">Curso Extensão – Não concluído: Biotecnologia – UEM.</h6>
+                    </div>
+
+                    <div class="list padding grey-600">
+                        <h6 class="padding text-white">Pós graduação – Não concluído: Desenvolvimento de Sistemas Orientados a Objetos em JAVA - UNICESUMAR.</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div class="footer grey-800 sub shadow tab">
+            <button class="icon ion-android-person active" onclick="openTab('tabSobre')">Sobre</button>
+            <button class="icon ion-android-list" onclick="openTab('tabContato')">Contato</button>
+            <button class="icon ion-android-chat" onclick="openTab('tabExperiencia')">Experiência</button>
+            <button class="icon ion-android-chat" onclick="openTab('tabFormacao')">Formação</button>
+        </div>
+    </footer>
+</html>
